@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv='Content-Type' content='text/html;charset=UTF-8' />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+<title>Multi-Level Push Menu for UI5</title>
+
+<link href="style/app.css" type="text/css" rel="stylesheet" />
+<link href="style/icon.css" type="text/css" rel="stylesheet" />
+<link href="style/menu.css" type="text/css" rel="stylesheet" />
+
+<script src="resources/sap-ui-core.js" id="sap-ui-bootstrap"
+	data-sap-ui-libs="sap.ui.commons" data-sap-ui-theme="sap_bluecrystal">
+</script>
+
+<script>
+	sap.ui.localResources("scn_menu");
+	var view = sap.ui.view({
+		id : "idapp1",
+		viewName : "scn_menu.app",
+		type : sap.ui.core.mvc.ViewType.JS
+	});
+	view.placeAt("content");
+</script>
+
+</head>
+<body class="sapUiBody" role="application">
+	<div id="content"></div>
+</body>
+</html>

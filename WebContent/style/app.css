@@ -1,0 +1,7 @@
+#ViewContainer.sapUiPanelWithPadding>.sapUiPanelCont{
+  padding: 20px;
+}
+#content{
+	height: 100%;
+	overflow: hidden;
+}
