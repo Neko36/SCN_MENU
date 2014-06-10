@@ -5,8 +5,8 @@ neko.renderer.MultiLevelMenu = {};
 /**
  * Renders the HTML for the given control, using the provided {@link sap.ui.core.RenderManager}.
  *
- * @param {sap.ui.core.RenderManager} oRenderManager The RenderManager that can be used for writing to the render output buffer.
- * @param {sap.ui.core.Control} oLink An object representation of the control that should be rendered.
+ * @param {sap.ui.core.RenderManager} oRm The RenderManager that can be used for writing to the render output buffer.
+ * @param {sap.ui.core.Control} oControl An object representation of the control that should be rendered.
  */
 neko.renderer.MultiLevelMenu.render = function(oRm, oControl){
 	
@@ -52,7 +52,7 @@ neko.renderer.MultiLevelMenu.render = function(oRm, oControl){
 /**
  * Renders the HTML recursively for the given menu structure
  *
- * @param {sap.ui.core.RenderManager} oRenderManager The RenderManager that can be used for writing to the render output buffer.
+ * @param {sap.ui.core.RenderManager} oRm The RenderManager that can be used for writing to the render output buffer.
  * @param {neko.element.MultiLevelMenuIteml} oMenu The menu structure.
  * @param {boolean} topNav Controls the rendering of the top navigation item.
  */
@@ -117,8 +117,8 @@ neko.renderer.MultiLevelMenu.renderMenu = function(oRm, oMenu, topNav) {
 /**
  * Renders the HTML for a link
  *
- * @param {sap.ui.core.RenderManager} oRenderManager The RenderManager that can be used for writing to the render output buffer.
- * @param {neko.element.MultiLevelMenuIteml} oMenu A menu item.
+ * @param {sap.ui.core.RenderManager} oRm The RenderManager that can be used for writing to the render output buffer.
+ * @param {neko.element.MultiLevelMenuIteml} oMenuItem A menu item.
  */
 neko.renderer.MultiLevelMenu.renderLink = function(oRm, oMenuItem){
 	
@@ -149,8 +149,8 @@ neko.renderer.MultiLevelMenu.renderLink = function(oRm, oMenuItem){
 /**
  * Renders the HTML for an icon
  *
- * @param {sap.ui.core.RenderManager} oRenderManager The RenderManager that can be used for writing to the render output buffer.
- * @param {neko.element.MultiLevelMenuIteml} oMenu A menu item.
+ * @param {sap.ui.core.RenderManager} oRm The RenderManager that can be used for writing to the render output buffer.
+ * @param {neko.element.MultiLevelMenuIteml} oMenuItem A menu item.
  */
 neko.renderer.MultiLevelMenu.renderIcon = function(oRm, oMenuItem){
 
