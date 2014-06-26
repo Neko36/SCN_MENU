@@ -42,7 +42,7 @@ sap.ui.core.Control.extend("neko.control.MultilevelMenu", {
 				singularName: "content"
 			},
 			"menu" : {				
-				type : "sap.ui.commons.MenuItem",
+				type : "neko.element.MultiLevelMenuItem",
 				multiple : false,
 				singularName: "menu"
 			}
