@@ -53,7 +53,7 @@ neko.renderer.MultiLevelMenu.render = function(oRm, oControl){
  * Renders the HTML recursively for the given menu structure
  *
  * @param {sap.ui.core.RenderManager} oRm The RenderManager that can be used for writing to the render output buffer.
- * @param {neko.element.MultiLevelMenuIteml} oMenu The menu structure.
+ * @param {neko.element.MultiLevelMenuItem} oMenu The menu structure.
  * @param {boolean} topNav Controls the rendering of the top navigation item.
  */
 neko.renderer.MultiLevelMenu.renderMenu = function(oRm, oMenu, topNav) {
@@ -118,7 +118,7 @@ neko.renderer.MultiLevelMenu.renderMenu = function(oRm, oMenu, topNav) {
  * Renders the HTML for a link
  *
  * @param {sap.ui.core.RenderManager} oRm The RenderManager that can be used for writing to the render output buffer.
- * @param {neko.element.MultiLevelMenuIteml} oMenuItem A menu item.
+ * @param {neko.element.MultiLevelMenuItem} oMenuItem A menu item.
  */
 neko.renderer.MultiLevelMenu.renderLink = function(oRm, oMenuItem){
 	
@@ -150,7 +150,7 @@ neko.renderer.MultiLevelMenu.renderLink = function(oRm, oMenuItem){
  * Renders the HTML for an icon
  *
  * @param {sap.ui.core.RenderManager} oRm The RenderManager that can be used for writing to the render output buffer.
- * @param {neko.element.MultiLevelMenuIteml} oMenuItem A menu item.
+ * @param {neko.element.MultiLevelMenuItem} oMenuItem A menu item.
  */
 neko.renderer.MultiLevelMenu.renderIcon = function(oRm, oMenuItem){
 
